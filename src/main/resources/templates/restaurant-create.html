@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Создание записи</title>
+</head>
+<body>
+    <form action="#" th:action="@{/restaurant-create}" th:object="${restaurant}" method="post">
+        <label for="city">Город</label>
+        <input type="text" th:field="*{city}" id="city" placeholder="Город">
+        <label for="name">Ресторан</label>
+        <input type="text" th:field="*{name}" id="name" placeholder="Наименование">
+        <input type="submit" value="Создать запись">
+    </form>
+</body>
+</html>
