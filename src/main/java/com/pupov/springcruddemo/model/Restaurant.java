@@ -1,6 +1,7 @@
 package com.pupov.springcruddemo.model;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
@@ -10,6 +11,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
+@NoArgsConstructor
 @Table(name = "restaurants")
 public class Restaurant {
     @Id
